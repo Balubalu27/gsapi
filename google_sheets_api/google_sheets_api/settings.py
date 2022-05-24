@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'sheets_app.SheetsAppConfig',
+    'sheets_app',
 ]
 
 MIDDLEWARE = [

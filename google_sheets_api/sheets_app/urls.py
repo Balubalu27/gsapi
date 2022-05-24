@@ -1,5 +1,7 @@
 from django.urls import path, include
 
+from sheets_app.views import DbUpdateView
+
 urlpatterns = [
-    path('google-sheets/', SheetsListView.as_view()),
+    path('', DbUpdateView.as_view()),
 ]

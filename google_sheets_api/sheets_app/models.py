@@ -8,5 +8,5 @@ class Order(models.Model):
     ruble_price = models.SmallIntegerField('стоимость, руб')
 
     def __str__(self):
-        return self.order_number
+        return str(self.order_number)
 
