@@ -17,8 +17,7 @@ services:
     command: bash -c "
              python /usr/src/google_sheets_api/manage.py makemigrations &&
              python /usr/src/google_sheets_api/manage.py migrate --noinput &&
-             python /usr/src/google_sheets_api/manage.py runserver 0.0.0.0:8000 &&
-             python /usr/src/google_sheets_api/sheets_app/db_update.py # Не работает, доработать!!
+             python /usr/src/google_sheets_api/manage.py runserver 0.0.0.0:8000
       "
     volumes:
       - .:/usr/src/google_sheets_api
