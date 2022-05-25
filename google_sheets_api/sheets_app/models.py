@@ -2,9 +2,9 @@ from django.db import models
 
 
 class Order(models.Model):
-    number = models.SmallIntegerField('№')
-    order_number = models.SmallIntegerField('заказ №')
-    dollar_price = models.SmallIntegerField('стоимость,$')
+    number = models.IntegerField('№')
+    order_number = models.IntegerField('заказ №')
+    dollar_price = models.IntegerField('стоимость,$')
     delivery_time = models.DateField('срок поставки')
     ruble_price = models.FloatField('стоимость, руб')
 

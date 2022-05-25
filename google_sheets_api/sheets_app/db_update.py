@@ -4,7 +4,10 @@ import time
 
 
 def get_request():
-    response = requests.get('http://127.0.0.1:8000')
+    try:
+        response = requests.get('http://127.0.0.1:8000')
+    except Exception as ex:
+        print('Сервер недоступен:', ex)
 
 
 schedule.every(5).seconds.do(get_request)
