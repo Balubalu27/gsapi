@@ -1,9 +1,8 @@
 from django.shortcuts import render
 from django.views import View
-
+from sheets_app.convert_to_rub import ConvertDollarToRuble
 from sheets_app.google_sheets_read import get_records_from_gsheets
 from sheets_app.models import Order
-from sheets_app.convert_to_rub import ConvertDollarToRuble
 
 
 class DbUpdateView(View):

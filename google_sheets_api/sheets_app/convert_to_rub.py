@@ -1,6 +1,7 @@
-import requests
 import datetime
 import xml.etree.ElementTree as ET
+
+import requests
 
 
 class ConvertDollarToRuble:
